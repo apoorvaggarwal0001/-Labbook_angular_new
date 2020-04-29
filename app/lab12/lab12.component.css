@@ -1,0 +1,6 @@
+table{
+    margin-left: 300px;
+}
+tr,td,th{
+    border: double blue 5px;
+}

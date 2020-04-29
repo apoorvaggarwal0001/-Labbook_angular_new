@@ -1,0 +1,16 @@
+<!-- {{product_data|json}} -->
+
+<h1>Product Results</h1>
+
+<table>
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Cost</th>
+    </tr>
+    <tr *ngFor="let prd of product_data">
+        <td>{{prd.prdId}}</td>
+        <td>{{prd.prdName}}</td>
+        <td>{{prd.prdCost}}</td>
+    </tr>
+</table>

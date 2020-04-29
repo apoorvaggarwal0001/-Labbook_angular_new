@@ -1,0 +1,17 @@
+<h2>All Products</h2>
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>NAME</td>
+        <td>COST</td>
+    </tr>
+    <tr *ngFor="let p of product|async">
+        <td>{{p.prdId}}</td>
+        <td>{{p.prdName}}</td>
+        <td>{{p.prdCost}}</td>
+        <td><button (click)="updateProduct(p.prdId)">Update</button></td>
+        <td><button (click)="deleteProduct(p.prdId)">Delete</button></td>
+        <td><button (click)="productDetail(p.prdId)">Details</button></td>
+    </tr>
+</table>
